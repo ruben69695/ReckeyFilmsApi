@@ -10529,16 +10529,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ruben/Documents/ReckeyFilmsApi/ReckeyFilmsApi.csproj",
+      "projectUniqueName": "/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/ReckeyFilmsApi.csproj",
       "projectName": "ReckeyFilmsApi",
-      "projectPath": "/home/ruben/Documents/ReckeyFilmsApi/ReckeyFilmsApi.csproj",
-      "outputPath": "/home/ruben/Documents/ReckeyFilmsApi/obj/",
+      "projectPath": "/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/ReckeyFilmsApi.csproj",
+      "outputPath": "/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/ReckeyFilmsApi.dll": "/home/ruben/Documents/ReckeyFilmsApi/bin/placeholder/netcoreapp1.1/ReckeyFilmsApi.dll"
+        "lib/netcoreapp1.1/ReckeyFilmsApi.dll": "/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/bin/placeholder/netcoreapp1.1/ReckeyFilmsApi.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {

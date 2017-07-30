@@ -6,3 +6,11 @@
 /home/ruben/Documents/ReckeyFilmsApi/obj/Debug/netcoreapp1.1/ReckeyFilmsApi.AssemblyInfo.cs
 /home/ruben/Documents/ReckeyFilmsApi/obj/Debug/netcoreapp1.1/ReckeyFilmsApi.dll
 /home/ruben/Documents/ReckeyFilmsApi/obj/Debug/netcoreapp1.1/ReckeyFilmsApi.pdb
+/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/bin/Debug/netcoreapp1.1/ReckeyFilmsApi.deps.json
+/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/bin/Debug/netcoreapp1.1/ReckeyFilmsApi.runtimeconfig.json
+/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/bin/Debug/netcoreapp1.1/ReckeyFilmsApi.runtimeconfig.dev.json
+/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/bin/Debug/netcoreapp1.1/ReckeyFilmsApi.dll
+/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/bin/Debug/netcoreapp1.1/ReckeyFilmsApi.pdb
+/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/obj/Debug/netcoreapp1.1/ReckeyFilmsApi.AssemblyInfo.cs
+/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/obj/Debug/netcoreapp1.1/ReckeyFilmsApi.dll
+/home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/obj/Debug/netcoreapp1.1/ReckeyFilmsApi.pdb

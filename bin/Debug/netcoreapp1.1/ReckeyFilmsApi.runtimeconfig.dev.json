@@ -1,7 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/ruben/.nuget/packages"
+      "C:\\Users\\Ruben Arrebola\\.nuget\\packages"
     ]
   }
 }

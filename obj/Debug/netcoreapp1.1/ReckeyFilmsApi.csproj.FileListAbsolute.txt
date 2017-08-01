@@ -14,3 +14,11 @@
 /home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/obj/Debug/netcoreapp1.1/ReckeyFilmsApi.AssemblyInfo.cs
 /home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/obj/Debug/netcoreapp1.1/ReckeyFilmsApi.dll
 /home/ruben/git/ReckeyFilmsApi/ReckeyFilmsApi/obj/Debug/netcoreapp1.1/ReckeyFilmsApi.pdb
+c:\Users\Ruben Arrebola\Desktop\GitHub\ReckeyFilmsApi\bin\Debug\netcoreapp1.1\ReckeyFilmsApi.deps.json
+c:\Users\Ruben Arrebola\Desktop\GitHub\ReckeyFilmsApi\bin\Debug\netcoreapp1.1\ReckeyFilmsApi.runtimeconfig.json
+c:\Users\Ruben Arrebola\Desktop\GitHub\ReckeyFilmsApi\bin\Debug\netcoreapp1.1\ReckeyFilmsApi.runtimeconfig.dev.json
+c:\Users\Ruben Arrebola\Desktop\GitHub\ReckeyFilmsApi\bin\Debug\netcoreapp1.1\ReckeyFilmsApi.dll
+c:\Users\Ruben Arrebola\Desktop\GitHub\ReckeyFilmsApi\bin\Debug\netcoreapp1.1\ReckeyFilmsApi.pdb
+c:\Users\Ruben Arrebola\Desktop\GitHub\ReckeyFilmsApi\obj\Debug\netcoreapp1.1\ReckeyFilmsApi.AssemblyInfo.cs
+c:\Users\Ruben Arrebola\Desktop\GitHub\ReckeyFilmsApi\obj\Debug\netcoreapp1.1\ReckeyFilmsApi.dll
+c:\Users\Ruben Arrebola\Desktop\GitHub\ReckeyFilmsApi\obj\Debug\netcoreapp1.1\ReckeyFilmsApi.pdb

@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 namespace ReckeyFilmsApi.Classes
 {  
     /// <summary>
-    /// This class send a get request to a web Server in DotNet Core in C#
+    /// This class send a get request to a web Server in DotNet Core in C#, by Rubén Arrebola de Haro
     /// </summary>
     class GetWebRequest
     {
@@ -58,7 +58,7 @@ namespace ReckeyFilmsApi.Classes
                 Response = Request.GetResponseAsync();
                 Response.Wait();
 
-                Console.WriteLine(DateTime.Now.Date.ToString() + "  /  " + this.GetType().ToString() + "  /  " + "Web Request Status: " + Response.Status);                
+                Console.WriteLine(DateTime.Now.ToString() + "  /  " + this.GetType().ToString() + "  /  " + "Web Request Status: " + Response.Status);                
 
                 if(Response.IsCompleted)
                 {

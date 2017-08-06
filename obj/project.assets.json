@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -10532,30 +10532,18 @@
       "projectUniqueName": "C:\\Users\\Ruben Arrebola\\Desktop\\GitHub\\ReckeyFilmsApi\\ReckeyFilmsApi.csproj",
       "projectName": "ReckeyFilmsApi",
       "projectPath": "C:\\Users\\Ruben Arrebola\\Desktop\\GitHub\\ReckeyFilmsApi\\ReckeyFilmsApi.csproj",
-      "packagesPath": "C:\\Users\\Ruben Arrebola\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Ruben Arrebola\\Desktop\\GitHub\\ReckeyFilmsApi\\obj\\",
       "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Ruben Arrebola\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Ruben Arrebola\\.dotnet\\NuGetFallbackFolder": {},
-        "https://api.nuget.org/v3/index.json": {}
+      "files": {
+        "lib/netcoreapp1.1/ReckeyFilmsApi.dll": "C:\\Users\\Ruben Arrebola\\Desktop\\GitHub\\ReckeyFilmsApi\\bin\\placeholder\\netcoreapp1.1\\ReckeyFilmsApi.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {}
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {
@@ -10563,8 +10551,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.2",
-            "autoReferenced": true
+            "version": "1.1.2"
           },
           "Microsoft.AspNetCore": {
             "target": "Package",

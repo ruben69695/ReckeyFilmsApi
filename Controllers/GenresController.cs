@@ -57,5 +57,15 @@ namespace ReckeyFilmsApi.Controllers
             return noMasters.ToList();
         }
 
+        public Genres GetGenreByTmdbId(int? numero)
+        {
+            Genres item = _context.Genres.FirstOrDefault(t => t.tmdbId == numero);
+            if(item == null)
+            {
+                item = new Genres();
+            }
+            return item;
+        }
+
     }
 }

@@ -1,10 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ReckeyFilmsApi.Models;
-using System.Net;
-using System.Net.Http;
 using System.IO;
 using Newtonsoft.Json;
 using ReckeyFilmsApi.Classes;
@@ -17,6 +14,7 @@ namespace ReckeyFilmsApi.Controllers
     {
         private string apiKey = "api_key=094cfb8ef66c5c5522e8dff1f82ed80d";
         private string languageUrl = "&language=";
+        private string regionUrl = "&region=";
         private string queryUrl = "&query=";
         private GenresController genresController;
 
@@ -25,13 +23,79 @@ namespace ReckeyFilmsApi.Controllers
             genresController = new GenresController(context);
         }
 
+        [HttpGet("now_playing")]
+        public string GetNowPlaying(string language = "en", string region = "us")
+        {
+            String searchNowPlayingMoviesUrl = "https://api.themoviedb.org/3/movie/now_playing?";
+            String responseFromServer = "";
+            List<Film> films = new List<Film>();
+            String json = "";
+
+            GetWebRequest webRequest = new GetWebRequest(searchNowPlayingMoviesUrl + apiKey + languageUrl + language + regionUrl + region);
+
+            if(webRequest.SendRequest() == false)
+            {
+                Console.WriteLine("Error web request");
+            }
+            else
+            {
+                responseFromServer = webRequest.TextResponseFromServer;
+
+                // Leer json obtenido de la base de datos de las peliculas
+                JsonTextReader jsonTextReader = new JsonTextReader(new StringReader(responseFromServer));
+
+                // Obtenemos la lista de peliculas del JSON
+                films = GetFilmsByJSONResults(ref jsonTextReader);
+
+                // Convertimos la lista de pelis a una array de objetos JSON
+                json = JsonConvert.SerializeObject(films, Formatting.Indented);
+            }   
+
+            return(json);
+        }
+
+        [HttpGet("popular")]
+        public string GetPopularFilms(string language = "en")
+        {
+            String searchPopularMoviesUrl = "https://api.themoviedb.org/3/movie/popular?";
+            String responseFromServer = "";
+            List<Film> films = new List<Film>();
+            String json = "";
+
+            GetWebRequest webRequest = new GetWebRequest(searchPopularMoviesUrl + apiKey + languageUrl + language);
+
+            if(webRequest.SendRequest() == false)
+            {
+                Console.WriteLine("Error web request");                
+            }
+            else
+            {
+                responseFromServer = webRequest.TextResponseFromServer;
+
+                // Leer json obtenido de la base de datos de las peliculas
+                JsonTextReader jsonTextReader = new JsonTextReader(new StringReader(responseFromServer));
+                int numResults = 0;
+
+                // Localizamos si hay resultados
+                numResults = GetTotalResults(ref jsonTextReader);
+
+                if(numResults > 0)
+                {
+                    films = GetFilmsByJSONResults(ref jsonTextReader);
+                    json = JsonConvert.SerializeObject(films, Formatting.Indented);
+                }
+            }
+
+            return (json);
+        }
+
         [HttpGet("top_rated")]
-        public IEnumerable<Film> GetFilmsTopRated(string language = "en")
+        public string GetTopRatedFilms(string language = "en")
         {
             String searchTopRatedMoviesUrl = "https://api.themoviedb.org/3/movie/top_rated?";
             String responseFromServer = "";
-            Film pelicula = new Film();
             List<Film> films = new List<Film>();
+            String json = "";
 
             GetWebRequest webRequest = new GetWebRequest(searchTopRatedMoviesUrl + apiKey + languageUrl + language);
 
@@ -53,19 +117,18 @@ namespace ReckeyFilmsApi.Controllers
                 if(numResults > 0)
                 {
                     films = GetFilmsByJSONResults(ref jsonTextReader);
+                    json = JsonConvert.SerializeObject(films, Formatting.Indented);
                 }
-
             }
 
-            return(films);
+            return(json);
         }
 
         [HttpGet("search/{title}")]
-        public IEnumerable<Film> GetFilms(string title, string language = "en")
+        public IEnumerable<Film> GetFilmsByTitle(string title, string language = "en")
         {
             String serchMovieUrl = "https://api.themoviedb.org/3/search/movie?";
             String responseFromServer = "";
-            Film pelicula = new Film();
             List<Film> films = new List<Film>();
 
             GetWebRequest webRequest = new GetWebRequest(serchMovieUrl + apiKey + languageUrl + language + queryUrl + title);
